@@ -32,6 +32,14 @@ c.beginPath();
 	c.strokeStyle = "black";
 	c.stroke();
 
+c.beginPath();
+	c.moveTo(513.4,  10);
+	c.lineTo(513.4,   5);
+	c.lineTo(586.6, 5);
+	c.lineTo(586.6,10);
+	c.strokeStyle = "black";
+	c.stroke();	
+
 // CIRCULOS
 c.beginPath();
 	c.arc(550, 110, 2, 0, Math.PI*2,false);
