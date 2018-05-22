@@ -23,10 +23,7 @@
 
   					Even if xG isn't the best metric to measure Goalkeepers, it's really good to measure the chances that your defence is letting go through. In the same vein
   					Goalkeepers that that have a negative diferential (GoalsAgainst-xG) will prove that they're better than the average goalkeeper.
-				<img src="IdeaFinal.jpg">
+				<img src="IdeaFinal.jpg" alt="Final Idea" />
 		</h2>
-
-
-
 </body>
 </html>
