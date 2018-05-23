@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>README</title>
-
 </head>
 <body>
 	<h1># Interactive-xG</h1>

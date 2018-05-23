@@ -1,12 +1,13 @@
-var coloringField = document.querySelector('coloringField'),
+/* var coloringField = document.getElementById("coloringField"),
 	c = canvas.getContext('2d'),
 	cx = 250,
 	cy = 10;
 
-function heatmap(){
- 	for (var i = 0; i < 250; i++) {
+coloringField.onclick = function heatmap ()
+	{
 
- 	
+		for (var i = 0; i < 1000; i++) {
+
 		var pitchX = (cx-250)*60/850,
 	        pitchY = (cy-10)*45/460,
 	        leftPostXY = [263.4*60/850, 0*45/460], // xy coords of the goal
@@ -30,10 +31,12 @@ function heatmap(){
 	    	CL = xG*10;
 			console.log(xG, CL);
 		    c.globalAlpha = 0.8;
-			c.fillStyle = 'hsl(130, 50%,  ' + 400 * xG + '%';
+//			c.fillStyle = 'hsl(130, 50%,  ' + 400 * xG + '%';
+			c.fillStyle = 'rgba(0,' + 400 * xG + ',0,0.1)';
 			c.fillRect(cx, cy, 1, 1);
 
 			cx++;
 	 		if (cx >= 850) {cy++; cx=250;}
 	}
 }
+*/
