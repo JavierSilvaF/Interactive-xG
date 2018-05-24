@@ -1,5 +1,6 @@
-var calculations = document.querySelector('calculations');
 console.log('Simple xG Shot Model.');
+var calculations = document.querySelector('calculations'),
+	canvas = document.querySelector('canvas'),
 	c = canvas.getContext('2d'),
 	cx = 250,
 	cy = 10,
@@ -32,7 +33,7 @@ function getPosition(Event){
 	var x = Event.clientX;
 	var y = Event.clientY;
 	console.log(x, y);
-/*
+
     var pitchX = (x-250)*60/850,
         pitchY = (y-10)*45/460,
         leftPostXY = [263.4*60/850, 0*45/460], // xy coords of the goal
@@ -66,9 +67,12 @@ function getPosition(Event){
         {name: "goalDistance", value: goalDistance},
       ])
         console.log('xG: ', xG);
+
+		c.font = "15px Arial";
+		c.fillText("xG: ' xG+ '",10 ,50);
    	}
    	return xG, x, y;
- */
+/* 
 
 		for (var i = 0; i < 270000; i++)
 		{
@@ -99,6 +103,7 @@ function getPosition(Event){
 			cx++;
 	 		if (cx >= 850) {cy++, cx=250;}
 		}
+*/
 }
 
  
