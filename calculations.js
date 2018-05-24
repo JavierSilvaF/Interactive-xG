@@ -67,11 +67,11 @@ function getPosition(Event){
         {name: "goalDistance", value: goalDistance},
       ])
         console.log('xG: ', xG);
+        var text = "xG = ";
+		document.getElementById("xGtext").innerHTML =text, document.getElementById("xG").innerHTML =xG;
+       	   	return xG, x, y;
 
-		c.font = "15px Arial";
-		c.fillText("xG: ' xG+ '",10 ,50);
    	}
-   	return xG, x, y;
 /* 
 
 		for (var i = 0; i < 270000; i++)
