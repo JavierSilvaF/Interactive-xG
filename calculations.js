@@ -69,9 +69,9 @@ function getPosition(Event){
         console.log('xG: ', xG);
         var text = "xG = ";
 		document.getElementById("xGtext").innerHTML =text, document.getElementById("xG").innerHTML =xG;
-       	   	return xG, x, y;
-
    	}
+   	return x, y, xG;
+   	
 /* 
 
 		for (var i = 0; i < 270000; i++)
