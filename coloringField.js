@@ -1,12 +1,21 @@
-/* var coloringField = document.getElementById("coloringField"),
+ var coloringField = document.getElementById("coloringField"),
 	c = canvas.getContext('2d'),
-	cx = 250,
-	cy = 10;
+	opacity = false;
 
-coloringField.onclick = function heatmap ()
+document.getElementById('button').onclick = function heatmap()
 	{
+		var cx = 250.1,
+			cy = 10.1;
 
-		for (var i = 0; i < 1000; i++) {
+		opacity = !opacity;
+		console.log(opacity);
+		if (opacity == true){ 
+		c.globalAlpha = 0.8;}
+		else{
+		}
+
+		for (var i = 0; i < 10800; i++)
+		{
 
 		var pitchX = (cx-250)*60/850,
 	        pitchY = (cy-10)*45/460,
@@ -27,16 +36,10 @@ coloringField.onclick = function heatmap ()
 	        goalDistance = Math.sqrt(Math.pow(centreGoalXY[0]-pitchX, 2) + Math.pow(centreGoalXY[1]-pitchY, 2)); // Distance to the centre of the goal
 	      
 	    var   xG = 1/(1+Math.exp(-(-1.745598 + 1.338737*goalAngle - 0.110384*goalDistance + 0.168798*goalAngle*goalDistance)));
-
-	    	CL = xG*10;
-			console.log(xG, CL);
-		    c.globalAlpha = 0.8;
-//			c.fillStyle = 'hsl(130, 50%,  ' + 400 * xG + '%';
-			c.fillStyle = 'rgba(0,' + 400 * xG + ',0,0.1)';
-			c.fillRect(cx, cy, 1, 1);
-
-			cx++;
-	 		if (cx >= 850) {cy++; cx=250;}
-	}
-}
-*/
+		   
+			c.fillStyle = 'hsl(130, 50%,  ' + 150* xG + '%';
+			c.fillRect(cx, cy, 5,5);
+			cx += 5;
+	 		if (cx >= 850) {cy += 5, cx=250;}
+		}
+};
