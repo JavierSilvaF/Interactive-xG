@@ -68,10 +68,19 @@ function getPosition(Event){
       ])
         console.log('xG: ', xG);
 */      var text = "xG = ";
-		xGtotal = xG*100,
-		xGString = xGtotal.toString()
-		document.getElementById("xGtext").innerHTML =text,
-		document.getElementById("xG").innerHTML =xGString.substring(0, 2);
+		  xGtotal = xG*100,
+		  xGString = xGtotal.toString();
+      xGF= xGString.substring(0,5);
+      c.clearRect(40,50,200,300);
+      c.font = "30px Arial";
+      c.fillText(text + xGString.substring(0, 2),50,100);
+
+
+
+
+
+//		document.getElementById("xGtext").innerHTML =text,
+//		document.getElementById("xG").innerHTML =xGString.substring(0, 2);
    	}
    	return x, y, xG;
 }
