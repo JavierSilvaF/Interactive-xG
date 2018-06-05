@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Interactive xG</title>
 	<style type="text/css">
-		body {
-			margin: 0;
-		}
+		body { margin: 0;}
+		.button {
+	}
 	</style>
 </head>
 <body>
-	<canvas></canvas>
-	<input id="button" type="button" value="Heatmap!">
+	<button id="button" type="button" style= "margin-left: 900px; margin-top: 300px;">Heatmap!</button>
+	<canvas id="Field" style="z-index: 1; position:absolute; left:0px; top:0px"> </canvas>
+	<canvas id="HeatmapCanvas" style="z-index: 2; position:absolute; left:0px; top:0px"	></canvas>
+
 	<script src="canvas.js"></script>
 	<script src="calculations.js"></script>
 	<script src="coloringField.js"></script>
-	<p id="xGtext"></p> <p id="xG"></p>
 </body>
 </html>

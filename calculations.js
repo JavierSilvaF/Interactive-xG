@@ -1,6 +1,6 @@
 console.log('Simple xG Shot Model.');
 var calculations = document.querySelector('calculations'),
-	canvas = document.querySelector('canvas'),
+	canvas = document.querySelector('Field'),
 	c = canvas.getContext('2d'),
 	cx = 250,
 	cy = 10,

@@ -1,8 +1,8 @@
-var canvas = document.querySelector('canvas');
-canvas.width = 900;
-canvas.height = 500;
-var c = canvas.getContext('2d');
-console.log(canvas);
+field = document.getElementById("Field");
+field.width = 900;
+field.height = 500;
+var c = field.getContext('2d');
+console.log(field);
 
 // CANCHA
 c.beginPath();
