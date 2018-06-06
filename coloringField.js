@@ -13,7 +13,6 @@ document.getElementById('button').onclick = function heatmap()
 			cy = 10.1;
 		c.globalAlpha = 0.85
 		bool = !bool;
-		console.log(bool);
 		if (bool == true){ 
 				for (var i = 0; i < 10800; i++)
 				{

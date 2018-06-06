@@ -5,17 +5,25 @@
 	<title>Interactive xG</title>
 	<style type="text/css">
 		body { margin: 0;}
-		.button {
-	}
 	</style>
 </head>
-<body>
+<body 	style="background-color:rgb(245,245,245)";>
 	<button id="button" type="button" style= "margin-left: 900px; margin-top: 300px;">Heatmap!</button>
 	<canvas id="Field" style="z-index: 1; position:absolute; left:0px; top:0px"> </canvas>
 	<canvas id="HeatmapCanvas" style="z-index: 2; position:absolute; left:0px; top:0px"	></canvas>
-
 	<script src="canvas.js"></script>
 	<script src="calculations.js"></script>
 	<script src="coloringField.js"></script>
+
+	<h1 style="color:rgb(19, 157, 19); margin-left: 900px; margin-top: -300px; font-family: Helvetica;"> <strong>xG Interactive Field</strong></h1>
+	<h2 style="background-color: color rgb(220,220,220); margin-left: 915px; margin-top: 0px;">
+		<font size="3" face="Helvetica" color="rgb(245,245,245)">
+		    xG is a measure based in the probability of a given shot will resulting in a goal; the better the xG, the closer to 1, the better the chance is.<br>
+		<br>
+	  	An exceptional striker would be one who has a positive G-xG diferential meaning he finishes better than the average strike.<br>
+	  	It's worth noting that sometimes strikers will have a big xG and at the same time a low G-xG diferential meaning that<br>
+	  	the striker positions himself properly and manages to convert those chances.<br></font>
+	</h2>
 </body>
+
 </html>

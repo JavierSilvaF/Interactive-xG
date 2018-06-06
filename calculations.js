@@ -1,7 +1,6 @@
 console.log('Simple xG Shot Model.');
 var calculations = document.querySelector('calculations'),
-	canvas = document.querySelector('Field'),
-	c = canvas.getContext('2d'),
+
 	cx = 250,
 	cy = 10,
 	cont = 0;
@@ -32,7 +31,6 @@ document.addEventListener("click", getPosition, false);
 function getPosition(Event){
 	var x = Event.clientX;
 	var y = Event.clientY;
-	console.log(x,y);
 
     var pitchX = (x-250)*60/850,
         pitchY = (y-10)*45/460,
