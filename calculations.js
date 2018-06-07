@@ -31,7 +31,7 @@ document.addEventListener("click", getPosition, false);
 function getPosition(Event){
 	var x = Event.clientX;
 	var y = Event.clientY;
-
+  console.log(x,y);
     var pitchX = (x-250)*60/850,
         pitchY = (y-10)*45/460,
         leftPostXY = [263.4*60/850, 0*45/460], // xy coords of the goal
@@ -69,9 +69,9 @@ function getPosition(Event){
 		  xGtotal = xG*100,
 		  xGString = xGtotal.toString();
       xGF= xGString.substring(0,5);
-      c.clearRect(40,50,200,300);
-      c.font = "30px Arial";
-      c.fillText(text + xGString.substring(0, 2),50,100);
+      c.clearRect(775,465,300,300);
+      c.font = "20px Arial";
+      c.fillText(text + xGString.substring(0, 2),775,480);
 
 
 

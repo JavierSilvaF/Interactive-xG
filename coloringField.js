@@ -43,12 +43,7 @@ document.getElementById('button').onclick = function heatmap()
 				}
 			}
 		else{
-
-		for (var i = 0; i < 10800; i++)
-		{
-		  c.clearRect(0,0,900,500);
-		}
-
+		  c.clearRect(0,0,851,461);
 		}
 
 };

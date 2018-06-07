@@ -13,6 +13,9 @@ c.beginPath();
 	c.lineTo(250,10);
 	c.strokeStyle = "black";
 	c.stroke();
+c.fillStyle="rgb(220,220,220)";
+c.fillRect(251,11,598,448);
+
 
 // AREA
 c.beginPath();
